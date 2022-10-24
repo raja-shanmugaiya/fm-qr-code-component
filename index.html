@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | QR code component</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: hsl(212, 45%, 89%);
+      min-height: 100vh;
+      min-width: 100vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Outfit;
+    }
+
+    .qr-frame {
+      background-color: hsl(0, 0%, 100%);
+      border-radius: 20px;
+      width: 25%;
+    }
+   
+    .image {
+      padding: 15px;
+      border-radius: 10px;
+      max-width:100%;
+      max-height: 100%;
+    }
+
+    .image img {
+      width:100%;
+      border-radius: 15px;
+    }
+
+    .content {
+      padding: 30px;
+    }
+
+    .header-content {
+      font-size: 25px;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    .sub-content {
+      color: hsl(0, 0%, 83%);
+      margin: 15px;
+      font-size: 15px;
+      text-align: center;
+    }
+
+    @media screen and (max-width: 1440px) {
+      .qr-frame {
+        width: 25%;
+      }
+    }
+
+    @media screen and (max-width: 640px) {
+      .qr-frame {
+        width: 60%;
+      }
+    }
+      
+    @media screen and (max-width: 375px) {
+      .qr-frame {
+        width: 80%;
+      }
+    }
+
+
+  </style>
+</head>
+<body>
+  <div class="qr-frame">
+    <div class="image">
+      <img src="./images/image-qr-code.png" alt="Qr code">
+    </div>
+    <div class="content">
+      <div class="header-content">Improve your front-end skils by building projects</div>
+      <div class="sub-content">Scan the QR code to visit Frontend Mentor and take your skils to next level</div>
+    </div>
+  </div>
+</body>
+</html>
